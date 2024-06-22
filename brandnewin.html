@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UppBeat</title>
+
+    <!-- === Link css === -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- === link remix icons ==== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+
+</head>
+<body>
+    <!-- ?=== sidebar === -->
+    <nav class="sidebar">
+        <!-- ?=== sidebar logo === -->
+        <header>
+            <a href="index.html" class="logo">
+                <h1>UppBeat</h1>
+            </a>
+        </header>
+
+        <!-- ?=== navbars === -->
+        <!-- !=== first navbar ==== -->
+        <ul class="navbar-first navbars">
+            <li class="nav-links active">
+                <a href="#">
+                    <i class="ri-music-2-fill icon"></i>
+                    <span class="nav-text text">Music</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-voiceprint-fill icon"></i>
+                    <span class="nav-text text">Sound Effects</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-line-chart-line icon"></i>
+                    <span class="nav-text text">Trending</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- !=== second navbar ==== -->
+        <ul class="navbar-second navbars">
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-heart-fill icon"></i>
+                    <span class="nav-text text">My Favorites</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-file-music-fill icon"></i>
+                    <span class="nav-text text">My Playlist</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-settings-5-fill icon"></i>
+                    <span class="nav-text text">My Profile</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-star-fill icon"></i>
+                    <span class="nav-text text">Pricing</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- !=== third navbar ==== -->
+        <ul class="navbar-third navbars">
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-question-fill icon"></i>
+                    <span class="nav-text text">Help Center</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-money-dollar-circle-fill icon"></i>
+                    <span class="nav-text text">Refer & Earn</span>
+                </a>
+            </li>
+
+            <li class="nav-links">
+                <a href="#">
+                    <i class="ri-blogger-fill icon"></i>
+                    <span class="nav-text text">Blog</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- *=== mode switch === -->
+
+        <ul class="navbar-bottom navbars mode-nav">
+            <li class="nav-links mode">
+                <div class="sun-moon">
+                    <i class="ri-sun-fill icon sun"></i>
+                    <i class="ri-moon-fill icon moon"></i>
+                </div>
+                <span class="mode-text text">Dark Mode</span>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- ?==== main home section ==== -->
+    <section class="home">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Search traks, artist, styles or sound effects" id="search-input">
+                <span class="search-icon"><i class="ri-search-line icon"></i></span>
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="pricing text">Pricing</button>
+                <button type="button" class="signup text">Sign Up</button>
+                <button type="button" class="login text">Log In</button>
+            </div>
+        </div>
+
+
+        <!-- ?==== main content ==== -->
+        <div class="songs">
+                
+                <div class="song-category">
+                    <div class="songC-image">
+                        <img src="imgs/brand new in.png" alt="">
+                    </div>
+
+                    <div class="songC-text">
+                        <h1 class="text">Brand New In</h1>
+                        <p class="text">Show some love to the latest music on Uppbeat, browse our brand new collection of the freshest beats & discover awesome soundtracks before they start trending.</p>
+                </div>
+            </div>
+
+            <div class="song-cards">
+                    <div class="song-card">
+                        <div class="song-poster">
+                            <img src="sposter/peaches.jpg" alt="">
+                            <i class="ri-play-circle-line"></i>
+                        </div>
+                        <div class="song-title">
+                            <h3 class="text">Peaches</h3>
+                            <p class="text">Justin Beiber</p>
+                        </div>
+                        <div class="song-track">
+                            <audio class='audioPlayer' controls>
+                                <source src='songs/Justin Bieber - Peaches ft. Daniel Caesar, Giveon.mp3' type='audio/mp3'>
+                            </audio>
+                        </div>
+                        <div class="music-bar">
+                            <dotlottie-player src="https://lottie.host/9de75818-6efd-4af4-a4e1-657a836b947c/cIIpFZ6sAo.json" background="transparent" speed="1" style="width: 100px; height: 40px;" loop></dotlottie-player>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+</body>
+</html>
